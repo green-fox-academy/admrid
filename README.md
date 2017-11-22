@@ -1,7 +1,7 @@
 repos
 
-https://github.com/admrid/hello-world
+[hello world](https://github.com/admrid/hello-world)
 
-https://github.com/admrid/patchwork
+[patchwork](https://github.com/admrid/patchwork)
 
-https://github.com/admrid/git-lesson-repository
+[git-lesson-repo](https://github.com/admrid/git-lesson-repository)
