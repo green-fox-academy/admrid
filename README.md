@@ -1,4 +1,4 @@
-repos of https://admrid.github.io/
+repos of [ADM](https://admrid.github.io/)
 
 - [hello world](https://github.com/admrid/hello-world)
 - [patchwork](https://github.com/admrid/patchwork)
