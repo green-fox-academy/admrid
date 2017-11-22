@@ -5,6 +5,6 @@ repos of [ADM](https://admrid.github.io/)
 - [git-lesson-repo](https://github.com/admrid/git-lesson-repository)
 
 
-THE [BADCAT-SYLLABUS](https://github.com/greenfox-academy/badcat-syllabus/wiki/Week-1)
+THE [B4DC47T-SYLLABUS](https://github.com/greenfox-academy/badcat-syllabus/wiki/Week-1)
 
 
