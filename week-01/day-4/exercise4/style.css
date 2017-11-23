@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin: 2px 0 0 5px;
+}
+
+h1 {
+    color: #f6ad23;
+    font-family: /*Georgia, Times,*/ Times New Roman, serif;
+    font-size: 17px;
+}
+
