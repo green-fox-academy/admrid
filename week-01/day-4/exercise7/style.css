@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+}
+
+body {
+    width: 236px;
+    margin: 4px 0 0 6px;
+}
+
+.asteroid.big {
+    color: blue;
+}
+
+.container > div {
+    border: 1px solid green;
+}
+
+div.asteroid {
+    font-weight: bold;
+}
+
+p {
+    background-color: yellow;
+    margin: 16px 0 19px 0;
+}
