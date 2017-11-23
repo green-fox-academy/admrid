@@ -3,9 +3,31 @@
 }
 
 body {
-    margin: 5px 0 0 6px;
+    margin: 12px 0 0 12px;
+    width: 500px;
 }
 
 p {
-    width: 370px;
+    display: inline-block;
+    padding-top: 55px;
+    /* padding-bottom: 55px; */
+    width: 137px;
+    height: 87px;
+    border-radius: 50%;
+    color: black;
+    background-color: #0cebde;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    margin-right: 13px;
+    margin-bottom: 14px;
+}
+
+p:first-child{
+    background-color: #b90ceb;
+}
+
+p:last-child{
+    background-color: #ebbe0c;
 }
