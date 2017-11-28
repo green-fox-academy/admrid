@@ -3,5 +3,8 @@
 # - Swap the first and the third element of `abc`
 
 abc = ["first", "second", "third"]
-abc1[2, 0] = abc[0, 2]
-print(abc1)
+abc[0], abc[2] = abc[2], abc[0]
+# abc1 = abc[2]
+# abc[2] = abc[0]
+# abc[0] = abc1
+print(abc)
