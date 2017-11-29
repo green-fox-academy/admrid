@@ -19,9 +19,6 @@
 
 # print(li)
 
-li = []
-for r in range(4):
-    r = 0
 
 print(li)
 
