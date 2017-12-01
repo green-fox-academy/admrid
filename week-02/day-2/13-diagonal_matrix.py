@@ -16,9 +16,21 @@
 #     li.append([])
 #     for j in range(4):
 #         li[r].append(0)
+#         print(li)
 
-# print(li)
 
+# l = [1, 0, 0, 0]
 
-print(li)
+# for i in range(4):
+#     print(l)
+#     l[i]=0
+#     l[i+1]=1
+
+# print(l)
+
+n = [0, 0, 0, 0]
+for i in range(0, len(n)):
+    n[i] = 1
+    n[i-1] = 0
+    print(*n, sep=' ')
 
