@@ -24,7 +24,7 @@ ingredients = [
 	{ "name": "soda", "in_stock": 0, "needs_cooling": True }
 ]
 
-# SIMPLE PRINT FUNCTION TO UNDERSTAND HOW IT WORKS
+# MANUAL PRINT FUNCTION TO UNDERSTAND HOW IT WORKS
 # def printer(table):
 # 	length1 = len(table[3]["name"]) #18
 # 	length2 = 13
