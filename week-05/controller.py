@@ -18,30 +18,42 @@ def on_key_press(e):
     hero_old_y = hero.y
     hero_old_x = hero.x
 
-    if e.keysym == 'Up':    
-        hero.move('up')        
-        # printer.drawer(hero)
-        printer.canvas.itemconfig(printer.hero_img, image = printer.hero_up)
-        printer.canvas.move(printer.hero_img, hero.x - hero_old_x, hero.y - hero_old_y)
-        # printer.canvas.move('myhero', hero.x - hero_old_x, hero.y - hero_old_y)
-        # printer.canvas.move('myhero', 0, -72)        
-        # print('up')
+    if e.keysym == 'Up': 
+        if hero.y == 0:
+            printer.canvas.itemconfig(printer.hero_img, image = printer.hero_up)
+        else:   
+            hero.move('up')        
+            # printer.drawer(hero)
+            printer.canvas.itemconfig(printer.hero_img, image = printer.hero_up)
+            printer.canvas.move(printer.hero_img, hero.x - hero_old_x, hero.y - hero_old_y)
+            # printer.canvas.move('myhero', hero.x - hero_old_x, hero.y - hero_old_y)
+            # printer.canvas.move('myhero', 0, -72)        
+            # print('up')
     elif e.keysym == 'Down':
-        hero.move('down')
-        # printer.drawer(hero)
-        printer.canvas.itemconfig(printer.hero_img, image = printer.hero_down)
-        printer.canvas.move(printer.hero_img, hero.x - hero_old_x, hero.y - hero_old_y)      
-        # print('down')
+        if hero.y == 720-72:
+            printer.canvas.itemconfig(printer.hero_img, image = printer.hero_down)
+        else: 
+            hero.move('down')
+            # printer.drawer(hero)
+            printer.canvas.itemconfig(printer.hero_img, image = printer.hero_down)
+            printer.canvas.move(printer.hero_img, hero.x - hero_old_x, hero.y - hero_old_y)      
+            # print('down')
     elif e.keysym == 'Right':
-        hero.move('right')
-        printer.canvas.itemconfig(printer.hero_img, image = printer.hero_right)
-        printer.canvas.move(printer.hero_img, hero.x - hero_old_x, hero.y - hero_old_y)
-        # print('right')
+        if hero.x == 720-72:
+            printer.canvas.itemconfig(printer.hero_img, image = printer.hero_right)
+        else:
+            hero.move('right')
+            printer.canvas.itemconfig(printer.hero_img, image = printer.hero_right)
+            printer.canvas.move(printer.hero_img, hero.x - hero_old_x, hero.y - hero_old_y)
+            # print('right')
     elif e.keysym == 'Left':
-        hero.move('left')
-        printer.canvas.itemconfig(printer.hero_img, image = printer.hero_left)
-        printer.canvas.move(printer.hero_img, hero.x - hero_old_x, hero.y - hero_old_y)
-        # print('left')
+        if hero.x == 0:
+            printer.canvas.itemconfig(printer.hero_img, image = printer.hero_left)
+        else:
+            hero.move('left')
+            printer.canvas.itemconfig(printer.hero_img, image = printer.hero_left)
+            printer.canvas.move(printer.hero_img, hero.x - hero_old_x, hero.y - hero_old_y)
+            # print('left')
 
 
 printer.canvas.bind("<KeyPress>", on_key_press)
