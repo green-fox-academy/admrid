@@ -31,8 +31,7 @@ class Map():
             [0, 1, 1, 1, 1, 0, 1, 1, 0, 0]]
 
         self.map_lista = []
-        # self.floor = FloorTile()
-        # self.wall = WallTile()
+
         for i in range(len(self.map_transp_lista)):
             for j in range(len(self.map_transp_lista[i])):
                 if self.map_transp_lista[i][j] == 0:
@@ -42,30 +41,39 @@ class Map():
         # print(self.map_lista)
 
 class Char():
-    # d6 = d6 is a random number between 1 and 6 aka 6 sided die rol
     
-    def __init__(self, imagehero1, x, y, hp, dp, sp):
-        self.imagehero1 = imagehero1
+    def __init__(self, imagefile, x, y, hp, dp, sp):
+        self.imagefile = imagefile
         self.x = x
         self.y = y
         self.hp = hp
         self.dp = dp
         self.sp = sp
 
-    def d6():
-        dice_num = randint(1, 6)
+    def d6(self):
+        return randint(1, 6)
+
+    def move(self, direction):
+        self. direction = direction
+        if direction == 'up':
+          self.y -= 72
+        if direction == 'down':
+          self.y += 72
+        if direction == 'right':
+          self.x += 72
+        if direction == 'left':
+          self.x -= 72
 
 class Hero(Char):
     def __init__(self):
-        super().__init__('assets/wall.gif', 20 + 3 * randint(1, 6), 2 * randint(1, 6), 5 + randint(1, 6))
+        super().__init__('assets/hero-down.gif', 0, 0, 20 + 3 * self.d6(), 2 * self.d6(), 5 + self.d6())
         # HP: 20 + 3 * d6
         # DP: 2 * d6
         # SP: 5 + d6
 
+
 class Monster(Char):
     def __init__(self):
-        super().__init__('assets/wall.gif', 2 * x * randint(1, 6) (+ randint(1, 6)), x/2 * randint(1, 6) (+ randint(1, 6)/2), x * randint(1, 6) (+x))
-
-
-hero = Hero()
-print(hero.d6)
+        super().__init__('assets/hero-down.gif', x, y, 2 * self.d6() (+ self.d6()), 2 * self.d6() (+ self.d6()/2), self.d6())
+        # ORIGINAL VALUES:
+        # super().__init__('assets/hero-down.gif', x, y, 2 * x * self.d6() (+ self.d6()), x/2 * self.d6() (+ self.d6()/2), x * self.d6() (+x))

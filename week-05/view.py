@@ -10,7 +10,7 @@ class Printer():
         self.canvas = Canvas(self.root, width='720', height='720')
         self.canvas.pack()
 
-    # ToDo: ide berakni ezt: PhotoImage(file='assets/floor.gif' és a másikat mint variable, és azokat aztán a drawerbe beadni
+        self.canvas.focus_set()
 
     # load the .gif image file
     # imagefile_to_draw = PhotoImage(file='assets/floor.gif')
@@ -26,5 +26,4 @@ class Printer():
         self.canvas.create_image(thing_to_draw.x, thing_to_draw.y, anchor=NW, image=image_obj)
         self.canvas.update()
 
-    # drawer(tile)
     # root.mainloop()
