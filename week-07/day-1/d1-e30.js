@@ -27,10 +27,10 @@ if (lineCount % 2 === 0) {
   }
 } else {
   for (let i = 1; i < lineCountHalf + 1; i++) {
-    console.log(' '.repeat(lineCountHalf - i) + '*'.repeat(i) + '*'.repeat(i-1));
+    console.log(' '.repeat(lineCountHalf - i + 1) + '*'.repeat(i) + '*'.repeat(i-1));
   }
   
   for (let i = lineCountHalf; i > 0; i--) {
-    console.log(' '.repeat(lineCountHalf - i) + '*'.repeat(i) + '*'.repeat(i-1));
+    console.log(' '.repeat(lineCountHalf - i + 1) + '*'.repeat(i) + '*'.repeat(i-1));
   }
 }
