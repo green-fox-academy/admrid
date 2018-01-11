@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Workshop: CreateElement</title>
+</head>
+<body>
+  <ul class="asteroids">
+    <li id="b325" class="asteroid">The King</li>
+    <li class="asteroid b326">The Conceited Man</li>
+  </ul>
+  <div class="container"></div>
+
+  <!-- You can work in the html or in a separate js file. Like:
+  <script>
+    Add an item that says 'The Green Fox' to the asteroid list.
+    Add an item that says 'The Lamplighter' to the asteroid list.
+    Add a heading saying 'I can add elements to the DOM!' to the .container.
+    Add an image, any image, to the container.
+  </script>
+  OR
+  <script src="createelement-1.js"></script> -->
+  <script>
+    'use strict';
+
+    let listElement1 = document.createElement('li');
+    let listElement2 = document.createElement('li');
+    let list = document.querySelector('ul.asteroids');
+    let containerElement = document.querySelector('div.container');
+    let heading = document.createElement('h1');
+    let image = document.createElement('img');
+
+    listElement1.textContent = 'The Green Fox';
+    listElement2.textContent = 'The Lamplighter';
+    heading.textContent = 'I can add elements to the DOM!';
+    image.setAttribute('src', 'https://media.npr.org/assets/img/2017/02/05/baby-fiona_wide-0495d60b84dcba6d79deffd4cb35a7eb3292b228-s900-c85.jpg');
+
+    list.appendChild(listElement1); 
+    list.appendChild(listElement2); 
+    containerElement.appendChild(heading); 
+    containerElement.appendChild(image); 
+
+  </script>
+</body>
+</html>
