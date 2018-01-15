@@ -1,3 +1,5 @@
+'use strict';
+
 const Panama = {
     cash: 0,
     name: 'Panama',
