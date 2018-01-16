@@ -8,8 +8,23 @@
 //  - escape() // logs "BREAKING NEWS, [yourname] escaped the prison" to the console.
 //    - it should empties the fugitive variable
 
-function Prison() {
-  let 
+function prison(theFugitive) {
+  let fugitive = theFugitive;
+  let visits = 0;
+  return {
+    visit: function() {
+      visits++;
+      if (fugitive === '') {
+        console.log('Nobody is here anymore');
+      } else {
+        console.log(fugitive + ' is visited ' + visits + 'time(s)'); 
+      }
+    },
+    escape: function(){
+      console.log('BREAKING NEWS, ' + fugitive + ' escaped the prison');
+      fugitive = '';
+    }   
+  }
 }
 
 const alcatraz = prison('Sad Panda');
