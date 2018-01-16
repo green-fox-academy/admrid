@@ -8,7 +8,9 @@
 //  - escape() // logs "BREAKING NEWS, [yourname] escaped the prison" to the console.
 //    - it should empties the fugitive variable
 
-function 
+function Prison() {
+  let 
+}
 
 const alcatraz = prison('Sad Panda');
 
