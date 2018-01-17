@@ -20,13 +20,21 @@
       giphyApiReq.open("GET", "http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=J3xBehMnKXdQXklKeckkMFJBlFGmfy1F&limit=16");
       giphyApiReq.send();
 
+      let building = function(toProcess) {
+        toProcess.forEach(gif => {
+          let image = document.createElement('img');
+          image.setAttribute('src', gif.images.fixed_width_small_still.url);
+          image.addEventListener('click', function() {
+            image.setAttribute('src', gif.images.fixed_width_small.url);
+          })
+          document.body.appendChild(image);
+        });
+      };
+
       giphyApiReq.onreadystatechange = function() {
         if (giphyApiReq.readyState == 4 && giphyApiReq.status < 400 && giphyApiReq.status >= 200) {
-          console.log('ez a log:', JSON.parse(giphyApiReq.response));
           images = JSON.parse(giphyApiReq.response);
-          console.log(images);
-          console.log(giphyApiReq);
-          console.log(images.data[3]);
+          building(images.data);
         }
       };
     };
