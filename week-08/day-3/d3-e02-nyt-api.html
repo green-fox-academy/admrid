@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Workshop: CreateElement</title>
+</head>
+<body>
+  <!-- <h1>The candyshop has:</h1>
+  <ul class="candyshop">
+    <li>1 Mega juicy candy</li>
+  </ul> -->
+  <script>
+    'use strict';
+
+    window.onload = function() {
+  
+      let nytApiReq = new XMLHttpRequest();
+      let searchResults;
+    
+      nytApiReq.open("GET", "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=apollo+11&api_key=3cbd117832374faaa2362b9c19019cbd");
+      nytApiReq.send();
+
+      let building = function(toProcess) {
+        let searchResultList = document.createElement('ul');
+        document.body.appendChild(searchResultList);
+        toProcess.forEach(article => {        
+          let searchResultArticle = document.createElement('li');
+          let searchResultArticleHeader = document.createElement('h1');
+          let searchResultArticleSnippet = document.createElement('p');
+          let searchResultArticleDate = document.createElement('p');
+          let searchResultArticleLink = document.createElement('a');
+          searchResultArticleHeader.innerText = article.headline.main;
+          searchResultArticleSnippet.innerText = article.snippet;
+          searchResultArticleDate.innerText = article.pub_date; 
+          searchResultArticleLink.innerText = article.web_url; 
+          searchResultArticleLink.setAttribute('href', article.web_url);
+          searchResultArticle.appendChild(searchResultArticleHeader);
+          searchResultArticle.appendChild(searchResultArticleSnippet);
+          searchResultArticle.appendChild(searchResultArticleDate);
+          searchResultArticle.appendChild(searchResultArticleLink);
+          searchResultList.appendChild(searchResultArticle);
+        });
+      };
+
+      nytApiReq.onreadystatechange = function() {
+        if (nytApiReq.readyState === XMLHttpRequest.DONE && nytApiReq.status < 400 && nytApiReq.status >= 200) {
+          searchResults = JSON.parse(nytApiReq.response);
+          // console.log(nytApiReq);
+          console.log(searchResults.response);
+          console.log(searchResults);
+          building(searchResults.response.docs);
+        }
+      };
+    };
+  </script>
+</body>
+</html>
