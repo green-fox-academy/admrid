@@ -92,6 +92,10 @@ main {
   text-align: center;
 }
 
+main a {
+  margin-right: 14px;
+}
+
 aside {
   margin-left: 10px;
 }
@@ -107,7 +111,7 @@ article > header {
   padding-bottom: 14px;
 }
 
-article > section > p {
+article p {
   padding-left: 14px;
 }
 

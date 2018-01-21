@@ -21,12 +21,14 @@ window.onload = function() {
       let redditPostContent = document.createElement('section');
       let redditPostHeader = document.createElement('h2');
       let redditPostDate = document.createElement('p');
-      // let redditPostLink = document.createElement('a');
-      // let redditPostUser = document.createElement('a');
+      let redditPostModify = document.createElement('a');
+      let redditPostRemove = document.createElement('a');
       
       redditPostVoteCount.innerText = post.score;
       redditPostHeader.innerHTML = `<a href="${post.url}">${post.title}</a>`;
       redditPostDate.innerHTML = `submitted ${post.timestamp} ago by <a href="">${post.owner}</a>`;
+      redditPostModify.innerHTML = `<a href="">modify</a>`;
+      redditPostRemove.innerHTML = `<a href="">remove</a>`;
 
       mainDiv.classList.add('main');
       redditPost.classList.add('post');
@@ -44,6 +46,8 @@ window.onload = function() {
       redditPostVote.appendChild(redditPostVoteDown);
       redditPostContent.appendChild(redditPostHeader);
       redditPostContent.appendChild(redditPostDate);
+      redditPostContent.appendChild(redditPostModify);
+      redditPostContent.appendChild(redditPostRemove);
     });
   };
 
