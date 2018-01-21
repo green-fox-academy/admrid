@@ -1,0 +1,88 @@
+html {
+  height: 100%;
+}
+
+body {
+  /* margin: 10.6px; */
+  margin: 0;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(236, 234, 234);
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+body > header {
+  width: 100%;
+  height: 300px;
+  background: url(reddit-logo-02.png) 2% center no-repeat, url(http://eskipaper.com/images/space-background-pictures-1.jpg) center -400px no-repeat fixed;
+  background-size: 10%, auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > img {
+  height: 50%;
+}
+
+h1 {
+  color: #fff;
+  /* margin: 0; */
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2em;
+  text-transform: uppercase;
+  text-shadow: #000 1px 0 120px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.main-content {
+  margin: 5px;
+  min-width: 600px;
+  /* flex-direction: column; */
+  /* margin: auto; */
+  display: flex;
+  /* flex-direction: column; */
+}
+
+main {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  display: flex;
+  background-color: #fff;
+  margin: 1px 0px;
+  padding: 10px 0px;
+}
+
+.vote {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  min-width: 80px;
+}
+
+.upvote {
+  background: url(upvote.png) center no-repeat;
+  background-size: 15px;
+  height: 15px;
+  border: none;
+}
+
+.downvote {
+  background: no-repeat center center/15px url(downvote.png);
+  height: 15px;
+  border: none;
+}
+
+.voteCount {
+  text-align: center;
+}
