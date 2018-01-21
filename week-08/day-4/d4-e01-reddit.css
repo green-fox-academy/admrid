@@ -41,8 +41,14 @@ h2 {
   margin-top: 0;
 }
 
+h3 {
+  margin: 0;
+  font-size: 14px;
+  padding-left: 14px;
+}
+
 .main-content {
-  margin: 5px;
+  margin: 20px 10px;
   min-width: 600px;
   /* flex-direction: column; */
   /* margin: auto; */
@@ -59,7 +65,6 @@ main {
 .post {
   display: flex;
   background-color: #fff;
-  margin: 1px 0px;
   padding: 10px 0px;
 }
 
@@ -85,4 +90,60 @@ main {
 
 .voteCount {
   text-align: center;
+}
+
+aside {
+  margin-left: 10px;
+}
+
+article {
+  background: #F5F5F5;
+}
+
+article > header {
+  height: 14px;
+  background: #FBFBFB;
+  padding-top: 12px;
+  padding-bottom: 14px;
+}
+
+article > section > p {
+  padding-left: 14px;
+}
+
+ul {
+  padding-bottom: 16px;
+  list-style: square;
+  line-height: 1.6em;
+}
+
+.btn {
+  display: inline-block;  
+  background: #4FA4DD;
+  /* border-top: 1px solid #96d1f8;
+  border-radius: 14px;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0; */
+  color: white;
+  width: 100%;
+  height: 14px;
+  /* margin: 20px; */
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  /* background: #395973; */
+  background: #252D3F;
+  color: #fff;
+  }
+
+.btn:active {
+  background: #1b435e;
 }
