@@ -1,0 +1,15 @@
+{
+  "name": "stuff-for-day3",
+  "version": "1.0.0",
+  "description": "things for day3",
+  "main": "entry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "tape": "^4.8.0"
+  }
+}
