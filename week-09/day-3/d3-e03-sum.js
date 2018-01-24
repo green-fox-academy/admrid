@@ -18,10 +18,20 @@
 
 'use strict';
 
-let apple = {
-  getApple: function() {
-    return 'apple';
+let numlist = [3, 5, 8, 4, 9];
+
+let summing = {
+  sum: function(numbers) {
+    let result = 0;
+    numbers.forEach(element => {
+      if (typeof element !== 'number') {
+        throw new Error(`${element} is not a number`);
+      } else {
+        result += element;
+      }
+    });
+    return result;
   }
 };
 
-module.exports = apple;
+module.exports = summing;
