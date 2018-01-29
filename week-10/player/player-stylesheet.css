@@ -1,9 +1,94 @@
-html body {
+html, body {
   height: 100%;
+  margin: 0;
 }
 
 main {
   display: flex;
   flex-direction: column;
   height: 100%;  
+}
+
+
+
+.content {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 200px);
+}
+
+.playing {
+  display: flex;
+  width: 100%;
+}
+
+
+
+.contentleft {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: yellow;
+}
+
+.contentright {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: yellowgreen;
+}
+
+
+
+.nav {
+  height: 200px;
+  width: 100%;
+  background-color: lightgray;
+}
+
+.playlists {
+  width: 100%;
+  height: calc(100% - 200px);
+  background-color: darkgray;
+}
+
+
+
+.playlistinfo {
+  height: 200px;
+  width: 100%;
+  background-color: darkgray;
+}
+
+.playlistcontent {
+  width: 100%;
+  height: calc(100% - 200px);
+  background-color: lightgray;
+}
+
+
+
+.artwork {
+  height: 200px;
+  width: 200px;
+  background-color: gray;
+}
+
+.playinginfo {
+  height: 200px;
+  width: calc(100% - 200px);
+  display: flex;
+  flex-direction: column;
+}
+
+.currenttrack {
+  height: 100px;
+  width: 100%;
+  background-color: lightgray;
+}
+
+.controls {
+  height: 100px;
+  width: 100%;
+  background-color: darkgray;
 }
