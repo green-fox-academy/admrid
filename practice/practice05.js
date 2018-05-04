@@ -26,3 +26,6 @@ function diagonalDifference(a) {
 const result = diagonalDifference(a);
 
 console.log(result);
+
+
+
