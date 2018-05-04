@@ -4,6 +4,16 @@
 
 'use strict';
 
-function toDict (aString) {
-  
+function countLetters (aString) {
+  let stringDict = {};
+  for (let i = 0; i < aString.length; i++) {
+    if (!(i in aString)) {
+      stringDict[i] = 1;
+    } else {
+      stringDict[i] += 1;
+    }
+  console.log(stringDict);
+  }
 }
+
+countLetters('anna');

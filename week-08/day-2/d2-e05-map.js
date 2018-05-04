@@ -9,23 +9,40 @@ var fruits = [
   'banana'
 ];
 
-// Create a new array of consists numbers that shows how many times the 'e' letter
-// occurs in the word stored under the same index at the fruits array!
-// Please use the map method.
+// Create a new array of consists numbers that shows how many times 
+// the 'e' letter occurs in the word stored under the same index 
+// at the fruits array! Please use the map method.
 
-function count() {
-  let numbers = fruits.map(realCount);
-  console.log(numbers);
-}
 
-function realCount(fruit) {
-  let numberOfEs = 0;
+
+let numbersOfEs = fruits.map(function(fruit) {
+  console.log(fruit);
+  let numberOfEs = 0 
   for (let i = 0; i < fruit.length; i++) {
-    if (fruit[i] === 'e'){
-      numberOfEs++;
+    if (fruit[i] === 'e') {
+      numberOfEs++
     }
-  }
-  return numberOfEs;
-}
+  } 
+  return numberOfEs
+});
 
-count()
+console.log(numbersOfEs);
+
+
+
+// function count() {
+//   let numbers = fruits.map(realCount);
+//   console.log(numbers);
+// }
+
+// function realCount(fruit) {
+//   let numberOfEs = 0;
+//   for (let i = 0; i < fruit.length; i++) {
+//     if (fruit[i] === 'e'){
+//       numberOfEs++;
+//     }
+//   } 
+//   return numberOfEs;
+// }
+
+// count();

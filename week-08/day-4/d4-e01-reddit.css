@@ -62,6 +62,10 @@ main {
   flex-direction: column;
 }
 
+main a {
+  margin-right: 10px;
+}
+
 .post {
   display: flex;
   background-color: #fff;
@@ -92,9 +96,31 @@ main {
   text-align: center;
 }
 
-main a {
-  margin-right: 14px;
+
+
+.form {
+  background-color: #fff;
+  padding: 20px 10px;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > label {
+  margin-bottom: 10px;
+}
+
+form > input {
+  margin-bottom: 10px;
+}
+
+form :nth-child(2) {
+  margin-bottom: 20px;
+}
+
+
 
 aside {
   margin-left: 10px;
@@ -120,6 +146,35 @@ ul {
   list-style: square;
   line-height: 1.6em;
 }
+
+button {
+  border-color: none;
+  border: none;
+  /* display: inline-block;   */
+  background: #4FA4DD;
+  color: white;
+  width: 40%;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  /* background: #395973; */
+  background: #252D3F;
+  color: #fff;
+  }
+
+button:active {
+  background: #1b435e;
+}
+
+
 
 .btn {
   display: inline-block;  

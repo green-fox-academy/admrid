@@ -43,13 +43,19 @@ main {
 .nav {
   height: 200px;
   width: 100%;
-  background-color: lightgray;
+  background-color: #181818;
+}
+
+img {
+  width: 60px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 .playlists {
   width: 100%;
   height: calc(100% - 200px);
-  background-color: darkgray;
+  background-color: #181818;
 }
 
 
@@ -57,13 +63,13 @@ main {
 .playlistinfo {
   height: 200px;
   width: 100%;
-  background-color: darkgray;
+  background-color: #181818;
 }
 
 .playlistcontent {
   width: 100%;
   height: calc(100% - 200px);
-  background-color: lightgray;
+  background-color: #181818;
 }
 
 
@@ -84,11 +90,15 @@ main {
 .currenttrack {
   height: 100px;
   width: 100%;
-  background-color: lightgray;
+  background-color: #181818;
 }
 
 .controls {
   height: 100px;
   width: 100%;
-  background-color: darkgray;
+  background-color: #181818;
+}
+
+audio {
+  width: 100%;
 }

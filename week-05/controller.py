@@ -17,9 +17,9 @@ def on_key_press(e):
     # print(e)
     hero_old_y = hero.y
     hero_old_x = hero.x
-
     if e.keysym == 'Up': 
-        if hero.y == 0:
+        
+        if hero.y == 0 or map.map_transp_lista[(hero.x) // 72][(hero.y + 72) // 72 - 1] == 1:
             printer.canvas.itemconfig(printer.hero_img, image = printer.hero_up)
         else:   
             hero.move('up')        
@@ -30,7 +30,8 @@ def on_key_press(e):
             # printer.canvas.move('myhero', 0, -72)        
             # print('up')
     elif e.keysym == 'Down':
-        if hero.y == 720-72:
+        # print(hero.x, hero.y, map.map_transp_lista[(hero.x) // 72][(hero.y + 72) // 72], (hero.y + 72) // 72)
+        if hero.y == 720-72 or map.map_transp_lista[(hero.x) // 72][(hero.y + 72) // 72] == 1:
             printer.canvas.itemconfig(printer.hero_img, image = printer.hero_down)
         else: 
             hero.move('down')
@@ -53,7 +54,9 @@ def on_key_press(e):
             hero.move('left')
             printer.canvas.itemconfig(printer.hero_img, image = printer.hero_left)
             printer.canvas.move(printer.hero_img, hero.x - hero_old_x, hero.y - hero_old_y)
-            # print('left')
+            # print('left')   
+    # print(hero.x, hero.y, map.map_transp_lista[(hero.x) // 72], map.map_transp_lista[(hero.x) // 72][(hero.y + 72) // 72])
+
 
 
 printer.canvas.bind("<KeyPress>", on_key_press)

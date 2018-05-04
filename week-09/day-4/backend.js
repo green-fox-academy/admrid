@@ -16,7 +16,7 @@ app.get('/doubling', function (req, res) {
   if (req.query.input === undefined) {
     res.json(
       {
-        error: 'Please provide an input!'
+        error: "Please provide an input!"
       }
     );
   } else {
@@ -29,7 +29,28 @@ app.get('/doubling', function (req, res) {
   }
 });
 
-
+app.get('/greeter', function (req, res) {
+  if (req.query.input === undefined) {
+    res.json(
+      {
+        error: 'Please provide an input!'
+      }
+    );
+  } else if {
+    res.json(
+      {
+        "welcome_message": "Oh, hi there Petike, my dear student!"
+      }
+    );
+  } else {
+    res.json(
+      {
+        received: req.query.input,
+        result: req.query.input * 2
+      }
+    );
+  }
+});
 
 
 app.listen(8080, function() {

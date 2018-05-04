@@ -1,4 +1,4 @@
 def search_palindrome(pali):
-    pass
+    pali 
 
 search_palindrome(racecar)
