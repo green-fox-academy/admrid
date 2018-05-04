@@ -1,0 +1,78 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 1%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box
+}
+
+header {
+  
+}
+
+main {
+  /* margin: 10%; */
+  width: 100%;
+  height:100%;
+  /* min-width: 600px; */
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+}
+
+.mainview {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.imageview {  
+  width: 100%;
+  height: 100%;
+  background-color: lightgray;
+}
+
+.thumbnailsview {
+  /* height: 85px; */
+  width: 84%;
+  display: inline-block;
+}
+
+button {
+  /* border: none;
+  background: none; */
+}
+
+li button {
+  height: 85px;
+  width: 85px;
+}
+
+.imageview > button {
+  width: 7.5%;
+  height: 96%;
+  display: inline-block;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  /* height: 85px; */
+}
+
+li {
+  list-style: none;
+  width: 12%;
+  /* display: inline-block; */
+}
+

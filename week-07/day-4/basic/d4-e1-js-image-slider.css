@@ -1,0 +1,69 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  
+}
+
+main {
+  width: 80%;
+  min-width: 600px;
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+}
+
+.mainview {
+  display: flex;
+  justify-content: center;
+}
+
+.imageview {  
+  width: 85%;
+  height: 300px;
+  background-color: lightgray;
+}
+
+.thumbnailsview {
+  /* height: 85px; */
+}
+
+button {
+  /* border: none;
+  background: none; */
+}
+
+li button {
+  height: 85px;
+  width: 100%;
+}
+
+.mainview button {
+  width: 7.5%;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  /* height: 85px; */
+}
+
+li {
+  list-style: none;
+  width: 12%;
+  /* display: inline-block; */
+}
+

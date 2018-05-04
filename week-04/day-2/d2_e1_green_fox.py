@@ -23,7 +23,6 @@ class Student(Person):
 
     def introduce(self):
         print('Hi, I\'m ' + self.name + ', a'  + str(self.age) + ' year old ' +  self.gender + ' from ' + self.prev_org + ' who skipped ' + str(self.skipped_days) + ' days from the course already.')
- #      print("Hi, I'm " + self.name + ", a " + str(self.age) + " year old " + self.gender  + " from " + self.prev_org + " who skipped " + str(self.skipped_days) + ' days from the course already.')
 
     def skip_days(self, number_of_days):
         self.number_of_days = number_of_days
@@ -75,7 +74,6 @@ class PallidaClass():
 
     def info(self):
         print('Pallida ' + self.class_name + ' class has ' + str(len(self.students)) + ' students and ' + str(len(self.mentors)) + ' mentors.')
-#       print("Pallida " + self.class_name + " class has " + str(len(self.students)) + " students and " + str(len(self.mentors)) + " mentors.")
     
 
 
