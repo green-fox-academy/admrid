@@ -50,3 +50,12 @@ function checkUsersValid(goodUsers) {
     });  
   };
 }
+
+function checkUsersValid(goodUsers) {
+  return function allUsersValid(submittedUsers) {
+    // SOLUTION GOES HERE
+
+    return submittedUsers.every(submittedUser => goodUsers.some(goodUser => goodUser.id === submittedUser.id));
+  };
+}
+
