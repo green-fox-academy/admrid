@@ -1,4 +1,5 @@
-
+// Let's Code BP - Functional Javascript
+// https://www.letscodebp.tk/project
 // Hello World
 function upperCaser(input) {
   // SOLUTION GOES HERE
@@ -59,3 +60,4 @@ function checkUsersValid(goodUsers) {
   };
 }
 
+// Basic: Reduce
